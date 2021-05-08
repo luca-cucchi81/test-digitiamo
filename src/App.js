@@ -1,16 +1,60 @@
 import InfoUrlCard from "./components/InfoUrlCard";
 import Response from "./components/Response";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import Input from "@material-ui/core/Input";
+import Select from "@material-ui/core/Select";
+import MenuItem from "@material-ui/core/MenuItem";
 /* Style */
 import "./styles/App.scss";
 
 function App() {
     return (
         <div className="app">
-            <Grid container justify="center" alignItems="center">
-                <Grid item xs lg={8} style={{ textAlign: "center" }}>
+            <Grid
+                container
+                justify="center"
+                alignItems="center"
+                className="app-grid-container"
+            >
+                <Grid
+                    item
+                    xs
+                    lg={8}
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        marginBottom: 30,
+                    }}
+                >
                     <h1>200</h1>
                     <p>Everything is fine!</p>
+                    <Grid item xs={10} md={8} className="input-submit">
+                        <Select
+                            variant="outlined"
+                            defaultValue={1}
+                            style={{
+                                width: "20%",
+                                maxHeight: "40px",
+                            }}
+                        >
+                            <MenuItem value={1}>GET</MenuItem>
+                            <MenuItem value={2}>POST</MenuItem>
+                            <MenuItem value={3}>PUT</MenuItem>
+                            <MenuItem value={4}>DELETE</MenuItem>
+                        </Select>
+                        <Input
+                            defaultValue="www.yoursite.com/home/index.php"
+                            disableUnderline={true}
+                            style={{
+                                width: "50%",
+                            }}
+                        ></Input>
+                        <Button variant="contained" color="primary">
+                            Send
+                        </Button>
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid container spacing={3} justify="center" alignItems="center">
@@ -28,6 +72,19 @@ function App() {
                 >
                     <InfoUrlCard />
                     <Response />
+                </Grid>
+            </Grid>
+            <Grid container justify="center" alignItems="center">
+                <Grid
+                    item
+                    xs
+                    lg={8}
+                    style={{ textAlign: "center", marginBottom: 35 }}
+                >
+                    <h3>Share</h3>
+                    <span className="share-text">
+                        httprequest.com/1a54da684864
+                    </span>
                 </Grid>
             </Grid>
         </div>
