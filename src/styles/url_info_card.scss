@@ -1,0 +1,31 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.url-info-card {
+    @include card;
+    @media screen and (min-width: 280px) and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    background-color: $smoke !important;
+    .MuiCardHeader-root {
+        background-color: $smoke;
+    }
+    .MuiCardContent-root {
+        background-color: $smoke;
+        .section {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 0;
+            padding: 10px 0 10px 5px;
+            background-color: $grayColor;
+            h3 {
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
