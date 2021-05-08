@@ -1,12 +1,13 @@
 import InfoUrlCard from "./components/InfoUrlCard";
 import Response from "./components/Response";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 import Input from "@material-ui/core/Input";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
+
 /* Style */
 import "./styles/App.scss";
+import ResponsiveButton from "./components/ResponsiveButton";
 
 function App() {
     return (
@@ -51,9 +52,7 @@ function App() {
                                 width: "50%",
                             }}
                         ></Input>
-                        <Button variant="contained" color="primary">
-                            Send
-                        </Button>
+                        <ResponsiveButton />
                     </Grid>
                 </Grid>
             </Grid>
