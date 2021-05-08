@@ -37,7 +37,7 @@ function Response() {
                                 textTransform: "uppercase",
                             }}
                         ></CardHeader>
-                        <CardContent style={{ padding: 0 }}>
+                        <CardContent>
                             <p>{info.status}</p>
                             <p>{info.location}</p>
                             <p>{info.server}</p>

@@ -37,15 +37,15 @@ function InfoUrlCard() {
                 ></CardHeader>
                 <CardContent>
                     <div className="section">
-                        <h3>Domain</h3>
+                        <h4>Domain</h4>
                         <p>{urlInfo.domain}</p>
                     </div>
                     <div className="section">
-                        <h3>Scheme</h3>
+                        <h4>Scheme</h4>
                         <p>{urlInfo.scheme}</p>
                     </div>
                     <div className="section">
-                        <h3>Path</h3>
+                        <h4>Path</h4>
                         <p>{urlInfo.path}</p>
                     </div>
                 </CardContent>
