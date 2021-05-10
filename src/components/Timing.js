@@ -7,7 +7,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import "../styles/timing.scss";
 
 function Timing() {
-    const [height, setHeight] = useState("5vh");
+    const [height, setHeight] = useState("6vh");
     const [timing, setTiming] = useState("");
 
     function getTiming() {
@@ -28,27 +28,27 @@ function Timing() {
     }, []);
 
     function handleHeight() {
-        setHeight("97vh");
-        if (height === "97vh") {
-            setHeight("5vh");
+        setHeight("100%");
+        if (height === "100%") {
+            setHeight("6%");
         }
     }
 
     return (
-        <div style={{ height: height }} className='timing'>
+        <div style={{ height: height }} className="timing">
             <Button
-                variant='outlined'
-                color='primary'
-                size='medium'
+                variant="outlined"
+                color="primary"
+                size="medium"
                 onClick={handleHeight}
-                className='button'
+                className="button"
             ></Button>
             <h3>Timing Analysis</h3>
-            <div className='content'>
-                <Box position='relative' display='inline-flex' className='box'>
+            <div className="content">
+                <Box position="relative" display="inline-flex" className="box">
                     <CircularProgress
-                        variant='determinate'
-                        color='primary'
+                        variant="determinate"
+                        color="primary"
                         value={100}
                         size={150}
                     />
@@ -57,11 +57,11 @@ function Timing() {
                         left={0}
                         bottom={0}
                         right={0}
-                        position='absolute'
-                        display='flex'
-                        flexDirection='column'
-                        alignItems='center'
-                        justifyContent='center'
+                        position="absolute"
+                        display="flex"
+                        flexDirection="column"
+                        alignItems="center"
+                        justifyContent="center"
                     >
                         <span
                             style={{
@@ -100,10 +100,10 @@ function Timing() {
                     </p>
                 </div>
 
-                <Box position='relative' display='inline-flex'>
+                <Box position="relative" display="inline-flex">
                     <CircularProgress
-                        variant='determinate'
-                        color='secondary'
+                        variant="determinate"
+                        color="secondary"
                         value={100}
                         size={150}
                     />
@@ -112,11 +112,11 @@ function Timing() {
                         left={0}
                         bottom={0}
                         right={0}
-                        position='absolute'
-                        display='flex'
-                        flexDirection='column'
-                        alignItems='center'
-                        justifyContent='center'
+                        position="absolute"
+                        display="flex"
+                        flexDirection="column"
+                        alignItems="center"
+                        justifyContent="center"
                     >
                         <span
                             style={{
