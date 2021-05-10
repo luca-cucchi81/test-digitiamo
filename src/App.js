@@ -8,15 +8,16 @@ import MenuItem from "@material-ui/core/MenuItem";
 /* Style */
 import "./styles/App.scss";
 import ResponsiveButton from "./components/ResponsiveButton";
+import Timing from "./components/Timing";
 
 function App() {
     return (
-        <div className="app">
+        <div className='app'>
             <Grid
                 container
-                justify="center"
-                alignItems="center"
-                className="app-grid-container"
+                justify='center'
+                alignItems='center'
+                className='app-grid-container'
             >
                 <Grid
                     item
@@ -31,9 +32,9 @@ function App() {
                 >
                     <h1>200</h1>
                     <p>Everything is fine!</p>
-                    <Grid item xs={10} md={8} className="input-submit">
+                    <Grid item xs={10} md={8} className='input-submit'>
                         <Select
-                            variant="outlined"
+                            variant='outlined'
                             defaultValue={1}
                             style={{
                                 width: "20%",
@@ -46,17 +47,17 @@ function App() {
                             <MenuItem value={4}>DELETE</MenuItem>
                         </Select>
                         <Input
-                            defaultValue="www.yoursite.com/home/index.php"
+                            defaultValue='www.yoursite.com/home/index.php'
                             disableUnderline={true}
                             style={{
-                                width: "50%",
+                                width: "55%",
                             }}
                         ></Input>
                         <ResponsiveButton />
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid container spacing={3} justify="center" alignItems="center">
+            <Grid container spacing={3} justify='center' alignItems='center'>
                 <Grid
                     item
                     xs={11}
@@ -73,18 +74,21 @@ function App() {
                     <Response />
                 </Grid>
             </Grid>
-            <Grid container justify="center" alignItems="center">
+            <Grid container justify='center' alignItems='center'>
                 <Grid
                     item
                     xs
                     lg={8}
-                    style={{ textAlign: "center", marginBottom: 35 }}
+                    style={{ textAlign: "center", marginBottom: "10vh" }}
                 >
                     <h3>Share</h3>
-                    <span className="share-text">
+                    <span className='share-text'>
                         httprequest.com/1a54da684864
                     </span>
                 </Grid>
+            </Grid>
+            <Grid container>
+                <Timing />
             </Grid>
         </div>
     );
